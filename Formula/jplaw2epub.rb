@@ -5,21 +5,21 @@
 class Jplaw2epub < Formula
   desc "Convert Japanese Standard Law XML Schema into EPUB files"
   homepage "https://github.com/ngs/jplaw2epub"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ngs/jplaw2epub/releases/download/v1.1.0/jplaw2epub_Darwin_x86_64.tar.gz"
-      sha256 "6406b23173d06b753097e1b89c4868138f1700868408b008b2492a3e9ddf8ebc"
+      url "https://github.com/ngs/jplaw2epub/releases/download/v1.2.0/jplaw2epub_Darwin_x86_64.tar.gz"
+      sha256 "c0de7daf43311582f479fbf35c807230681fc503c0e80f8e27af202013d310f0"
 
       def install
         bin.install "jplaw2epub"
       end
     end
     on_arm do
-      url "https://github.com/ngs/jplaw2epub/releases/download/v1.1.0/jplaw2epub_Darwin_arm64.tar.gz"
-      sha256 "a20f4abd44923059a79b6510cfebf0d568294341f81fa218dc9540959d7f452e"
+      url "https://github.com/ngs/jplaw2epub/releases/download/v1.2.0/jplaw2epub_Darwin_arm64.tar.gz"
+      sha256 "6c86bef67210b71088e994484005c9d2d4a6ffee73dc5a6f0b0c6dc3477c7390"
 
       def install
         bin.install "jplaw2epub"
@@ -30,8 +30,8 @@ class Jplaw2epub < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngs/jplaw2epub/releases/download/v1.1.0/jplaw2epub_Linux_x86_64.tar.gz"
-        sha256 "b2540273ed4643d3199716472bc34976c48e0379747525110f5509854fff787e"
+        url "https://github.com/ngs/jplaw2epub/releases/download/v1.2.0/jplaw2epub_Linux_x86_64.tar.gz"
+        sha256 "7b8baec54449ab667aeffa42608b5d1df5a6e6b81803b64c5fdb6d6271729126"
 
         def install
           bin.install "jplaw2epub"
@@ -40,8 +40,8 @@ class Jplaw2epub < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngs/jplaw2epub/releases/download/v1.1.0/jplaw2epub_Linux_arm64.tar.gz"
-        sha256 "0d56b490350585c617ba0937899bca9d098b9ef64aa1d627858f05a958c08ac7"
+        url "https://github.com/ngs/jplaw2epub/releases/download/v1.2.0/jplaw2epub_Linux_arm64.tar.gz"
+        sha256 "12e0a8fdb67b64d35ac22d280f58ef43cc88866b4d5786b1ad3815516b15db0e"
 
         def install
           bin.install "jplaw2epub"
