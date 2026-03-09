@@ -5,21 +5,21 @@
 class Koikoi < Formula
   desc "花札こいこいゲーム（CUI・任天堂ルール準拠）"
   homepage "https://github.com/ngs/go-koikoi"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.3/go-koikoi_0.0.3_darwin_amd64.zip"
-      sha256 "50433be79df8cc755f5e2369c839de24182f0d64534ace8ad76ab6ff9dfd87ba"
+      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.4/go-koikoi_0.0.4_darwin_amd64.zip"
+      sha256 "306f52f105daf0ebceb35a12f46b2131e7aa4afd5207290b7e995d17a5dea084"
 
       define_method(:install) do
         bin.install "koikoi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.3/go-koikoi_0.0.3_darwin_arm64.zip"
-      sha256 "e5a2912b9385dc5d27a382cfc11e07b7616b4023ffefc723c13838803ba9ec7c"
+      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.4/go-koikoi_0.0.4_darwin_arm64.zip"
+      sha256 "ee04190449bd5fe249a21fb05b59bbe7e1251697dafe73d1ea97ea1ff161b3c3"
 
       define_method(:install) do
         bin.install "koikoi"
@@ -29,15 +29,15 @@ class Koikoi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.3/go-koikoi_0.0.3_linux_amd64.tar.gz"
-      sha256 "aafcb9d910e0423b6f184db8363a56ae74aff10c903431f1eb8cdb93c863c362"
+      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.4/go-koikoi_0.0.4_linux_amd64.tar.gz"
+      sha256 "238cfa962bca695b51574d21cb3a4c53403965b2b5b88cdcf0ab64ef2a6af48c"
       define_method(:install) do
         bin.install "koikoi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.3/go-koikoi_0.0.3_linux_arm64.tar.gz"
-      sha256 "7072e7528d095bf3af1599f9b69ac5484731e9653e9cd1dd687b7a48ee563ec5"
+      url "https://github.com/ngs/go-koikoi/releases/download/v0.0.4/go-koikoi_0.0.4_linux_arm64.tar.gz"
+      sha256 "99eedcb1fdc12e3cdbc9ccaa373af1996ae550069c9f5eeec187256ffdeb2dcc"
       define_method(:install) do
         bin.install "koikoi"
       end
