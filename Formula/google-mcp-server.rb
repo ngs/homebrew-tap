@@ -5,21 +5,21 @@
 class GoogleMcpServer < Formula
   desc "MCP server for Google APIs integration"
   homepage "https://github.com/ngs/google-mcp-server"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.0/google-mcp-server_Darwin_x86_64.tar.gz"
-      sha256 "2d1e9f9d33df6e73ee465a1ce0a2a7734beb074355a19cdb03c518cfbe622e5c"
+      url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.1/google-mcp-server_Darwin_x86_64.tar.gz"
+      sha256 "1970ab6389c01f9867226bc0c02746a9b0f4c76d866412cfe38ee67b7001b768"
 
       def install
         bin.install "google-mcp-server"
       end
     end
     on_arm do
-      url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.0/google-mcp-server_Darwin_arm64.tar.gz"
-      sha256 "4ffd9afa957a2dbac6b06ddd56d9478beff2bb1f9bd3359db41a9f4ebadb75da"
+      url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.1/google-mcp-server_Darwin_arm64.tar.gz"
+      sha256 "9cffe3d1bbffdf36f22e0618ebb9a8b0c9f8797b10f17744974ea3826a42ab7f"
 
       def install
         bin.install "google-mcp-server"
@@ -30,8 +30,8 @@ class GoogleMcpServer < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.0/google-mcp-server_Linux_x86_64.tar.gz"
-        sha256 "c77e76c0effe792a27b9800c1f098464621b83e7f8287cd26c3adac459c70959"
+        url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.1/google-mcp-server_Linux_x86_64.tar.gz"
+        sha256 "6791f369613a2625231fea80974d3505f96ee2f13a41a578f5f91ec14f0de4de"
 
         def install
           bin.install "google-mcp-server"
@@ -40,8 +40,8 @@ class GoogleMcpServer < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.0/google-mcp-server_Linux_arm64.tar.gz"
-        sha256 "fc999fccc0727a6b2755290cf289ec86206f6819c1c249a2da6aa34fd5b206c1"
+        url "https://github.com/ngs/google-mcp-server/releases/download/v0.7.1/google-mcp-server_Linux_arm64.tar.gz"
+        sha256 "31365439378f55a71e617d8ebb98e927fc97ca88430d793c7ee60f39444d99b0"
 
         def install
           bin.install "google-mcp-server"
