@@ -5,21 +5,21 @@
 class SlackBridgeMcpServer < Formula
   desc "MCP server bridging a Claude CLI session to a private Slack channel"
   homepage "https://github.com/ngs/slack-bridge-mcp-server"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.4.0/slack-bridge-mcp-server_Darwin_x86_64.tar.gz"
-      sha256 "342a6573073e8d4df8274a909ad18d87ba839eee54d00d9e365e3efef49c84a7"
+      url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.5.0/slack-bridge-mcp-server_Darwin_x86_64.tar.gz"
+      sha256 "615b720b5ce7c9a5a4f6dd92cc61b987252023f5487c554828e18afeb5ea26ac"
 
       def install
         bin.install "slack-bridge-mcp-server"
       end
     end
     on_arm do
-      url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.4.0/slack-bridge-mcp-server_Darwin_arm64.tar.gz"
-      sha256 "11e096f83002461c9824251fa4abbe0fde67f3c7c2505e8ba2394bf601c32023"
+      url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.5.0/slack-bridge-mcp-server_Darwin_arm64.tar.gz"
+      sha256 "7b7870582e15a03124d8aebbf8e7004f9bfca7fe8060b555148c18900a17472e"
 
       def install
         bin.install "slack-bridge-mcp-server"
@@ -30,8 +30,8 @@ class SlackBridgeMcpServer < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.4.0/slack-bridge-mcp-server_Linux_x86_64.tar.gz"
-        sha256 "9fb2aebdfbd0da07683d04660a4a566e3b44c049ebc97959112bda4d9562fca1"
+        url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.5.0/slack-bridge-mcp-server_Linux_x86_64.tar.gz"
+        sha256 "318aafda537c3b87db7c86e59401a9045b254159a0a72ab3bdf6ca7cef62046a"
 
         def install
           bin.install "slack-bridge-mcp-server"
@@ -40,8 +40,8 @@ class SlackBridgeMcpServer < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.4.0/slack-bridge-mcp-server_Linux_arm64.tar.gz"
-        sha256 "2f7e98ef590b9699e9dc0f1a88bdbbcaf1fd8b3bb90420d46a4b5b2dd8206420"
+        url "https://github.com/ngs/slack-bridge-mcp-server/releases/download/v0.5.0/slack-bridge-mcp-server_Linux_arm64.tar.gz"
+        sha256 "144841fa075c8d80002ba88a38a1c6a2ebfee8d27893ff12decaeef3ceeebfdb"
 
         def install
           bin.install "slack-bridge-mcp-server"
